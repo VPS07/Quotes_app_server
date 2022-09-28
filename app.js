@@ -18,9 +18,9 @@ mongoose
 app.use("/crudapp", crudappRouter);
 
 app.get("/", (req, res) => {
-  res.sendFile(__dirname + "./public/index.html");
+  res.send("");
 });
 
 app.listen(port, () => {
-  console.log("Server is running http://localhost:5000");
+  //console.log("Server is running http://localhost:5000");
 });
